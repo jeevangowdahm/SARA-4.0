@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-fixed-variant": "#005142", "surface": "#f8f9fd", "tertiary": "#000000", "surface-container-lowest": "#ffffff", "surface-variant": "#e1e2e6", "on-error-container": "#93000a", "on-secondary": "#ffffff", "surface-dim": "#d9dade", "on-primary-fixed-variant": "#3c4662", "on-error": "#ffffff", "tertiary-container": "#091f1b", "outline-variant": "#c6c6ce", "secondary": "#006b58", "on-secondary-fixed": "#002019", "inverse-on-surface": "#eff1f5", "inverse-surface": "#2e3134", "secondary-fixed-dim": "#50dcbc", "primary-fixed": "#d9e2ff", "on-primary-fixed": "#101b34", "on-surface-variant": "#45464d", "primary-fixed-dim": "#bbc6e7", "secondary-fixed": "#71f9d7", "on-tertiary-fixed": "#091f1b", "on-tertiary-container": "#718983", "on-primary-container": "#7983a2", "surface-container-low": "#f2f3f7", "on-secondary-container": "#00705c", "on-surface": "#191c1f", "surface-container-high": "#e7e8ec", "secondary-container": "#6ef6d4", "surface-container-highest": "#e1e2e6", "inverse-primary": "#bbc6e7", "on-primary": "#ffffff", "error": "#ba1a1a", "surface-tint": "#535e7a", "outline": "#76777e", "surface-container": "#edeef2", "background": "#f8f9fd", "primary-container": "#101b34", "on-tertiary": "#ffffff", "surface-bright": "#f8f9fd", "tertiary-fixed": "#cfe8e1", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#354b46", "primary": "#000002", "tertiary-fixed-dim": "#b3ccc5", "on-background": "#191c1f" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "2rem", "margin": "2.5rem", "gutter": "1.5rem", "space-md": "1.25rem", "gutter-mobile": "1rem", "space-xs": "0.375rem", "margin-mobile": "1.25rem", "space-sm": "0.75rem", "space-xl": "3rem" }, fontFamily: { "label-md": ["Inter"], "display-hero": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-mono": ["JetBrains Mono"], "label-lg": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Inter"] }, fontSize: { "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.015em", fontWeight: "500" }], "display-hero": ["48px", { lineHeight: "56px", letterSpacing: "-0.03em", fontWeight: "700" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "600" }], "body-md": ["16px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "400" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-sm": ["14px", { lineHeight: "22px", letterSpacing: "0.005em", fontWeight: "400" }], "label-mono": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "500" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "600" }], "display-hero-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg-mobile": ["26px", { lineHeight: "34px", letterSpacing: "-0.015em", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "400" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(16,27,52,0.04)] pt-safe"><div class="h-20 px-4 flex items-center justify-between gap-2"><div class="flex items-center gap-2 min-w-0"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] rounded-xl flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><img alt="SARA Voice Orb Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1U63iEKX5h4Er76CwZ43bkNelmpBJ8-v5_f9wNMuoKmiA3B7nGLbWIUJ21RbktCydO14lapoCe2kCZue-nup58AT8DMFO4FaIMqYSxEY1BxNnguJKybG7gEULcZqFlWAvkXncRzun3M4zLop1BPieY14oWptf1xSf6_aYFpKR2SvQsGuUlP9pKy9WuznVV9m4AqhXLptxVfcIbDSybVq3wysfGIz_P0sxALRybSHDhB"/><div class="flex flex-col min-w-0 pl-1"><span class="font-headline-sm text-headline-sm text-primary-container truncate leading-none">Assisted Form Fill</span><span class="font-label-md text-label-md text-on-surface-variant truncate leading-tight mt-0.5">SARA Active Session</span></div></div><div class="flex items-center gap-2"><button aria-label="Toggle Voice Read Aloud" class="min-w-[44px] min-h-[44px] px-2.5 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-secondary hover:bg-secondary/10 transition-colors"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full px-4 pb-12 pt-2 gap-5 max-w-xl mx-auto">
+<!-- Celebration Aura & Hero Badge -->
+<div class="relative flex flex-col items-center text-center mt-2">
+<!-- Ambient mint ripple glows -->
+<div class="relative flex items-center justify-center w-32 h-32 my-1">
+<div class="absolute inset-0 rounded-full bg-secondary-fixed/40 animate-ping opacity-60"></div>
+<div class="absolute -inset-3 rounded-full bg-secondary-container/30 blur-md"></div>
+<div class="absolute inset-2 rounded-full bg-secondary-fixed-dim/30"></div>
+<!-- Central Success Shield / Emblem -->
+<div class="relative w-20 h-20 rounded-full bg-primary-container shadow-xl flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center shadow-[0_0_24px_rgba(113,249,215,0.45)]">
+<span class="material-symbols-outlined text-secondary-fixed text-[30px]" style="font-variation-settings: 'FILL' 1, 'wght' 700;">check</span>
+</div>
+</div>
+</div>
+<!-- Celebration Title & Human Narrative -->
+<div class="flex flex-col items-center gap-1.5 px-2">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+<span class="font-label-md text-label-md">Submission Finalized</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary-container tracking-tight mt-1">
+        Your voice made it happen.
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        Registration successfully created. Your details have been converted into standard government &amp; program formats.
+      </p>
+</div>
+</div>
+<!-- Proof & Reference Card (Level 1 Surface) -->
+<div class="bg-surface-container-lowest rounded-2xl p-5 shadow-sm flex flex-col gap-4">
+<!-- Card Header / ID Pill -->
+<div class="flex items-center justify-between gap-2">
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider">Application Reference</span>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-label-mono text-label-mono text-primary-container font-semibold tracking-wide" id="refId">SARA-REG-2025-08492</span>
+</div>
+</div>
+<button aria-label="Copy reference ID" class="min-h-[44px] px-3.5 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-center gap-1.5 text-primary-container" id="copyBtn" onclick="copyReference()">
+<span class="material-symbols-outlined text-[18px]" id="copyIcon">content_copy</span>
+<span class="font-label-md text-label-md" id="copyText">Copy</span>
+</button>
+</div>
+<div class="h-px bg-surface-variant/70 w-full"></div>
+<!-- Key Metadata Stack -->
+<div class="grid grid-cols-1 gap-3.5">
+<!-- Status Badge Field -->
+<div class="flex items-center justify-between gap-3">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span class="font-body-sm text-body-sm">Status</span>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Recorded &amp; Verified
+        </span>
+</div>
+<!-- Program Type -->
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">school</span>
+<span class="font-body-sm text-body-sm">Program</span>
+</div>
+<span class="font-label-lg text-label-lg text-primary-container text-right">
+          Community Digital Literacy Program
+        </span>
+</div>
+<!-- Input Modality & Timestamp -->
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">mic</span>
+<span class="font-body-sm text-body-sm">Voice Entry</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-body-sm text-body-sm text-on-surface">Kannada / English Dual</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Today, 11:42 AM IST</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Voice Confirmation Player (Secondary Delight Action) -->
+<div class="bg-surface-container-low rounded-2xl p-4 flex flex-col gap-3 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">record_voice_over</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-primary-container">Auditory Receipt</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Listen to spoken registration summary</span>
+</div>
+</div>
+<button aria-label="Play audio summary" class="min-w-[44px] min-h-[44px] rounded-xl bg-primary-container text-on-primary flex items-center justify-center hover:opacity-90 transition-all" id="playbackTrigger" onclick="toggleAudioPlayback()">
+<span class="material-symbols-outlined text-[20px]" id="playbackIcon">play_arrow</span>
+</button>
+</div>
+<!-- Dynamic Audio Frequency Bar Visualization -->
+<div class="bg-surface-container-lowest rounded-xl p-3 flex items-center gap-3">
+<div class="flex items-center gap-1 flex-1 h-5 px-1 justify-between" id="waveform">
+<div class="w-1 rounded-full bg-secondary transition-all duration-300 h-2"></div>
+<div class="w-1 rounded-full bg-secondary transition-all duration-300 h-4"></div>
+<div class="w-1 rounded-full bg-secondary transition-all duration-300 h-1.5"></div>
+<div class="w-1 rounded-full bg-secondary transition-all duration-300 h-3"></div>
+<div class="w-1 rounded-full bg-secondary transition-all duration-300 h-5"></div>
+<div class="w-1 rounded-full bg-secondary transition-all duration-300 h-2.5"></div>
+<div class="w-1 rounded-full bg-secondary transition-all duration-300 h-4"></div>
+<div class="w-1 rounded-full bg-secondary transition-all duration-300 h-1"></div>
+<div class="w-1 rounded-full bg-secondary transition-all duration-300 h-3.5"></div>
+<div class="w-1 rounded-full bg-secondary transition-all duration-300 h-2"></div>
+</div>
+<span class="font-label-mono text-label-mono text-on-surface-variant flex-shrink-0" id="audioTimer">0:24</span>
+</div>
+</div>
+<!-- Primary & Navigational Action Cluster -->
+<div class="flex flex-col gap-3 mt-1">
+<!-- Primary Action: PDF Download -->
+<button class="min-h-[52px] w-full rounded-xl bg-primary-container text-on-primary hover:bg-primary-container/90 transition-all shadow-md flex items-center justify-center gap-2.5 px-6 active:scale-[0.99]" onclick="triggerDownload()">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span class="font-label-lg text-label-lg">Download Audio &amp; Text Summary (PDF)</span>
+</button>
+<!-- Tertiary Action: Start Another Registration -->
+<button class="min-h-[48px] w-full rounded-xl bg-surface-container-lowest hover:bg-surface-container transition-all flex items-center justify-center gap-2 text-primary-container shadow-sm active:scale-[0.99]" onclick="startFreshRegistration()">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span class="font-label-lg text-label-lg">Start another registration</span>
+</button>
+</div>
+<!-- Transparent Regulatory & Privacy Reassurance Notice -->
+<div class="bg-surface-container-low rounded-2xl p-4 flex gap-3.5 items-start mt-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">shield_lock</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<span class="font-label-lg text-label-lg text-primary-container">Demo &amp; Privacy Notice</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        This assisted session was conducted in demonstration mode. No data has been submitted to external government organizations without explicit offline token authorization. Your voice audio has been deleted from memory.
+      </p>
+</div>
+</div>
+<!-- Contextual Visual Proof Placeholder -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-sm bg-surface-container h-36 flex items-center">
+<img alt="Digital literacy outreach center" class="w-full h-full object-cover opacity-85" data-alt="Photorealistic peaceful South Asian community center hall with natural morning light streaming through large windows, showcasing an inclusive technology outreach kiosk with green plants and modern welcoming ergonomics in soothing deep navy and mint palette, soft focus professional photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTlTGjGjdqSW_U3COt-yc-uQMdfV9fZvVWZ54vXh8pfKMySxM3duNoY9juVHoEBkqtGfvwStDG5OfJDGrjwwZ4rcDkeM12FrEO2OIPA9g3ETrtMtG6eQBY25WZjw3rX2-31FzDQACDfncrP9--DIjKJrI7pGJgT5kPxaa7uJQfltnDDnVd5W0hiQloJCqRocFINOXqKNOiZeTptPTsYhe3d5J1S0xT0Koo16V_lb4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-primary-container/20 to-transparent flex items-end p-4">
+<div class="flex items-center gap-2 text-on-primary">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span class="font-body-sm text-body-sm font-medium">Hub 04 • Bengaluru Urban District</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  let isPlaying = false;
+  let audioInterval = null;
+
+  function copyReference() {
+    const text = document.getElementById('refId').innerText;
+    navigator.clipboard?.writeText(text).then(() => {
+      const copyIcon = document.getElementById('copyIcon');
+      const copyText = document.getElementById('copyText');
+      copyIcon.innerText = 'check';
+      copyText.innerText = 'Copied';
+      setTimeout(() => {
+        copyIcon.innerText = 'content_copy';
+        copyText.innerText = 'Copy';
+      }, 2200);
+    });
+  }
+
+  function toggleAudioPlayback() {
+    isPlaying = !isPlaying;
+    const icon = document.getElementById('playbackIcon');
+    const bars = document.querySelectorAll('#waveform > div');
+    const timer = document.getElementById('audioTimer');
+
+    if (isPlaying) {
+      icon.innerText = 'pause';
+      let sec = 24;
+      audioInterval = setInterval(() => {
+        bars.forEach(bar => {
+          const rand = Math.floor(Math.random() * 18) + 4;
+          bar.style.height = rand + 'px';
+        });
+        sec--;
+        if (sec >= 0) {
+          timer.innerText = '0:' + (sec < 10 ? '0' + sec : sec);
+        } else {
+          toggleAudioPlayback();
+        }
+      }, 250);
+    } else {
+      icon.innerText = 'play_arrow';
+      clearInterval(audioInterval);
+      bars.forEach(bar => {
+        bar.style.height = '6px';
+      });
+      timer.innerText = '0:24';
+    }
+  }
+
+  function triggerDownload() {
+    const btn = event.currentTarget;
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">progress_activity</span><span class="font-label-lg text-label-lg">Generating PDF Package...</span>';
+    setTimeout(() => {
+      btn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check</span><span class="font-label-lg text-label-lg">Summary Downloaded</span>';
+      setTimeout(() => {
+        btn.innerHTML = originalText;
+      }, 2400);
+    }, 1200);
+  }
+
+  function startFreshRegistration() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    location.reload();
+  }
+</script></main></body></html>

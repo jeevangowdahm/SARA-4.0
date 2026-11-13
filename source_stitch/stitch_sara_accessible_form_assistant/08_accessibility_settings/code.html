@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-fixed-variant": "#005142", "surface": "#f8f9fd", "tertiary": "#000000", "surface-container-lowest": "#ffffff", "surface-variant": "#e1e2e6", "on-error-container": "#93000a", "on-secondary": "#ffffff", "surface-dim": "#d9dade", "on-primary-fixed-variant": "#3c4662", "on-error": "#ffffff", "tertiary-container": "#091f1b", "outline-variant": "#c6c6ce", "secondary": "#006b58", "on-secondary-fixed": "#002019", "inverse-on-surface": "#eff1f5", "inverse-surface": "#2e3134", "secondary-fixed-dim": "#50dcbc", "primary-fixed": "#d9e2ff", "on-primary-fixed": "#101b34", "on-surface-variant": "#45464d", "primary-fixed-dim": "#bbc6e7", "secondary-fixed": "#71f9d7", "on-tertiary-fixed": "#091f1b", "on-tertiary-container": "#718983", "on-primary-container": "#7983a2", "surface-container-low": "#f2f3f7", "on-secondary-container": "#00705c", "on-surface": "#191c1f", "surface-container-high": "#e7e8ec", "secondary-container": "#6ef6d4", "surface-container-highest": "#e1e2e6", "inverse-primary": "#bbc6e7", "on-primary": "#ffffff", "error": "#ba1a1a", "surface-tint": "#535e7a", "outline": "#76777e", "surface-container": "#edeef2", "background": "#f8f9fd", "primary-container": "#101b34", "on-tertiary": "#ffffff", "surface-bright": "#f8f9fd", "tertiary-fixed": "#cfe8e1", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#354b46", "primary": "#000002", "tertiary-fixed-dim": "#b3ccc5", "on-background": "#191c1f" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "2rem", "margin": "2.5rem", "gutter": "1.5rem", "space-md": "1.25rem", "gutter-mobile": "1rem", "space-xs": "0.375rem", "margin-mobile": "1.25rem", "space-sm": "0.75rem", "space-xl": "3rem" }, fontFamily: { "label-md": ["Inter"], "display-hero": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-mono": ["JetBrains Mono"], "label-lg": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-lg": ["Inter"] }, fontSize: { "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.015em", fontWeight: "500" }], "display-hero": ["48px", { lineHeight: "56px", letterSpacing: "-0.03em", fontWeight: "700" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "600" }], "body-md": ["16px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "400" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-sm": ["14px", { lineHeight: "22px", letterSpacing: "0.005em", fontWeight: "400" }], "label-mono": ["12px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "500" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "headline-md": ["24px", { lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "600" }], "display-hero-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg-mobile": ["26px", { lineHeight: "34px", letterSpacing: "-0.015em", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "400" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(16,27,52,0.04)] pt-safe"><div class="h-20 px-4 flex items-center justify-between gap-2"><div class="flex items-center gap-2 min-w-0"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] rounded-xl flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><img alt="SARA Voice Orb Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1U63iEKX5h4Er76CwZ43bkNelmpBJ8-v5_f9wNMuoKmiA3B7nGLbWIUJ21RbktCydO14lapoCe2kCZue-nup58AT8DMFO4FaIMqYSxEY1BxNnguJKybG7gEULcZqFlWAvkXncRzun3M4zLop1BPieY14oWptf1xSf6_aYFpKR2SvQsGuUlP9pKy9WuznVV9m4AqhXLptxVfcIbDSybVq3wysfGIz_P0sxALRybSHDhB"/><div class="flex flex-col min-w-0 pl-1"><span class="font-headline-sm text-headline-sm text-primary-container truncate leading-none">Assisted Form Fill</span><span class="font-label-md text-label-md text-on-surface-variant truncate leading-tight mt-0.5">SARA Active Session</span></div></div><div class="flex items-center gap-2"><button aria-label="Toggle Voice Read Aloud" class="min-w-[44px] min-h-[44px] px-2.5 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-secondary hover:bg-secondary/10 transition-colors"><span class="material-symbols-outlined text-[20px]">volume_up</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-20 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full px-4 pb-12 pt-2 gap-6 max-w-xl mx-auto">
+<!-- Warm Intro & Delight Anchor -->
+<section class="flex flex-col gap-2 bg-surface-container-lowest rounded-xl p-5 shadow-sm">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-secondary/15 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">accessibility_new</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary-container m-0">Accessibility &amp; Voice Preferences</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Tailor SARA to your hearing, sight, speech, and mobility needs.</p>
+<!-- Tactile Quick State Indicator -->
+<div class="mt-2 flex items-center gap-3 p-3 rounded-lg bg-surface-container-low text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-[22px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span class="font-label-md text-label-md">Active profile meets WCAG 2.2 Level AA accessibility criteria.</span>
+</div>
+</section>
+<!-- Interactive Test Voice Persona Orb Card -->
+<section class="flex flex-col bg-surface-container-lowest rounded-xl p-5 shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex flex-col gap-0.5">
+<span class="font-label-mono text-label-mono text-secondary uppercase tracking-wider">Interactive Diagnostic</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Test My Settings with SARA</h3>
+</div>
+<div class="relative w-11 h-11 flex items-center justify-center">
+<div class="absolute inset-0 rounded-full bg-secondary/20 scale-100 transition-transform duration-700 ease-out" id="orb-pulse"></div>
+<div class="w-8 h-8 rounded-full bg-secondary flex items-center justify-center text-on-secondary shadow-md relative z-10">
+<span class="material-symbols-outlined text-[18px]">graphic_eq</span>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Hear sample pacing, tone, and speech sensitivity live before saving.</p>
+<div class="mt-4 flex flex-col gap-3">
+<div class="p-3.5 rounded-lg bg-surface-container flex items-start gap-2.5 transition-colors" id="sample-transcript-box">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">format_quote</span>
+<p class="font-body-md text-body-md text-on-surface" id="sample-voice-text">"Namaskara, I am SARA. I will speak at your chosen pace and listen as long as you need."</p>
+</div>
+<button class="w-full min-h-[48px] rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-2 active:scale-[0.99] transition-transform" id="btn-test-preview" type="button">
+<span class="material-symbols-outlined text-[20px]" id="test-btn-icon">play_arrow</span>
+<span id="test-btn-label">Hear Sample Voice</span>
+</button>
+</div>
+</section>
+<!-- SECTION 1: Speech & Voice Input -->
+<section class="flex flex-col bg-surface-container-lowest rounded-xl p-5 shadow-sm gap-5">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[24px]">mic</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">1. Speech &amp; Voice Input</h3>
+</div>
+<!-- Language Selector -->
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-label-lg text-on-surface">Primary Language</label>
+<div aria-label="Primary Language" class="grid grid-cols-3 gap-2" role="radiogroup">
+<button aria-checked="true" class="lang-opt min-h-[48px] px-2 rounded-lg bg-secondary-container text-on-secondary-container font-label-lg text-label-lg flex flex-col items-center justify-center shadow-sm" role="radio" type="button">
+<span>English</span>
+<span class="font-label-md text-label-md opacity-80">Default</span>
+</button>
+<button aria-checked="false" class="lang-opt min-h-[48px] px-2 rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg flex flex-col items-center justify-center" role="radio" type="button">
+<span>ಕನ್ನಡ</span>
+<span class="font-label-md text-label-md opacity-80">Kannada</span>
+</button>
+<button aria-checked="false" class="lang-opt min-h-[48px] px-2 rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg flex flex-col items-center justify-center" role="radio" type="button">
+<span>हिन्दी</span>
+<span class="font-label-md text-label-md opacity-80">Hindi</span>
+</button>
+</div>
+</div>
+<!-- Voice Sensitivity -->
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-label-lg text-on-surface">Voice Input Sensitivity</label>
+<div aria-label="Voice Input Sensitivity" class="flex flex-col gap-2.5" role="radiogroup">
+<label class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low cursor-pointer active:bg-surface-container">
+<input checked="" class="mt-1 w-5 h-5 accent-secondary" name="sensitivity" type="radio" value="high"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">High Sensitivity</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Recommended for soft speech, dysarthria, or quiet breathing.</span>
+</div>
+</label>
+<label class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low cursor-pointer active:bg-surface-container">
+<input class="mt-1 w-5 h-5 accent-secondary" name="sensitivity" type="radio" value="standard"/>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Standard</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Optimized for typical conversational room volumes.</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Noise Filtering Toggle -->
+<div class="flex items-center justify-between gap-3 p-3 rounded-lg bg-surface-container-low">
+<div class="flex flex-col pr-2">
+<span class="font-label-lg text-label-lg text-on-surface">Ambient Noise Filtering</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Isolates your voice from fans, street noise, and crowds.</span>
+</div>
+<button aria-checked="true" class="noise-toggle min-w-[52px] h-[32px] bg-secondary rounded-full relative p-0.5 transition-colors flex-shrink-0" role="switch" type="button">
+<span class="block w-7 h-7 bg-on-secondary rounded-full shadow-sm transform translate-x-5 transition-transform"></span>
+</button>
+</div>
+</section>
+<!-- SECTION 2: Audio & Read-Aloud -->
+<section class="flex flex-col bg-surface-container-lowest rounded-xl p-5 shadow-sm gap-5">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[24px]">volume_up</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">2. Audio &amp; Read-Aloud</h3>
+</div>
+<!-- Speed Control -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface">Read-Aloud Speed</label>
+<span class="font-label-mono text-label-mono text-secondary" id="speed-label">0.75x (Relaxed)</span>
+</div>
+<div aria-label="Speech Speed" class="grid grid-cols-3 gap-2" role="radiogroup">
+<button class="speed-opt min-h-[48px] rounded-lg bg-secondary-container text-on-secondary-container font-label-lg text-label-lg flex flex-col items-center justify-center shadow-sm" data-speed="0.75" type="button">
+<span>0.75x</span>
+<span class="font-label-md text-label-md">Relaxed</span>
+</button>
+<button class="speed-opt min-h-[48px] rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg flex flex-col items-center justify-center" data-speed="1.0" type="button">
+<span>1.0x</span>
+<span class="font-label-md text-label-md">Normal</span>
+</button>
+<button class="speed-opt min-h-[48px] rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg flex flex-col items-center justify-center" data-speed="1.25" type="button">
+<span>1.25x</span>
+<span class="font-label-md text-label-md">Brisk</span>
+</button>
+</div>
+</div>
+<!-- Sound Pitch & Voice Tone -->
+<div class="flex flex-col gap-2">
+<label class="font-label-lg text-label-lg text-on-surface">Voice Tone &amp; Pitch</label>
+<div aria-label="Voice Tone" class="grid grid-cols-2 gap-2" role="radiogroup">
+<button class="tone-opt min-h-[52px] px-3 rounded-lg bg-secondary-container text-on-secondary-container font-label-lg text-label-lg flex flex-col items-center justify-center text-center shadow-sm" type="button">
+<span>Warm &amp; Natural</span>
+<span class="font-label-md text-label-md opacity-80">Default Empathy</span>
+</button>
+<button class="tone-opt min-h-[52px] px-3 rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg flex flex-col items-center justify-center text-center" type="button">
+<span>Crisp &amp; Articulated</span>
+<span class="font-label-md text-label-md opacity-80">High Consonants</span>
+</button>
+</div>
+</div>
+<!-- Auto-read Every Question -->
+<div class="flex items-center justify-between gap-3 p-3 rounded-lg bg-surface-container-low">
+<div class="flex flex-col pr-2">
+<span class="font-label-lg text-label-lg text-on-surface">Auto-read Every Step</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">SARA recites instructions and input fields automatically.</span>
+</div>
+<button aria-checked="true" class="autoread-toggle min-w-[52px] h-[32px] bg-secondary rounded-full relative p-0.5 transition-colors flex-shrink-0" role="switch" type="button">
+<span class="block w-7 h-7 bg-on-secondary rounded-full shadow-sm transform translate-x-5 transition-transform"></span>
+</button>
+</div>
+</section>
+<!-- SECTION 3: Visual & Display -->
+<section class="flex flex-col bg-surface-container-lowest rounded-xl p-5 shadow-sm gap-5">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[24px]">visibility</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">3. Visual &amp; Display</h3>
+</div>
+<!-- Text Scale -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface">Text Size Scale</label>
+<span class="font-label-mono text-label-mono text-secondary" id="scale-badge">Large (A++)</span>
+</div>
+<div aria-label="Text Size Scale" class="grid grid-cols-4 gap-2" role="radiogroup">
+<button class="scale-opt min-h-[48px] rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-center" data-scale="sm" type="button">
+<span>A</span>
+</button>
+<button class="scale-opt min-h-[48px] rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-center font-bold" data-scale="md" type="button">
+<span>A+</span>
+</button>
+<button class="scale-opt min-h-[48px] rounded-lg bg-secondary-container text-on-secondary-container font-label-lg text-label-lg flex items-center justify-center font-extrabold shadow-sm" data-scale="lg" type="button">
+<span>A++</span>
+</button>
+<button class="scale-opt min-h-[48px] rounded-lg bg-surface-container text-on-surface font-label-lg text-label-lg flex items-center justify-center font-black" data-scale="xl" type="button">
+<span>A+++</span>
+</button>
+</div>
+<!-- Live Preview Container -->
+<div class="p-3.5 rounded-lg bg-surface-container-low flex flex-col gap-1 mt-1">
+<span class="font-label-md text-label-md text-on-surface-variant">Live Preview Box</span>
+<p class="font-body-lg text-body-lg text-on-surface font-medium transition-all" id="preview-text-box">SARA will adapt reading clarity and form spacing to this size.</p>
+</div>
+</div>
+<!-- High Contrast Mode Toggle -->
+<div class="flex items-center justify-between gap-3 p-3 rounded-lg bg-surface-container-low">
+<div class="flex flex-col pr-2">
+<span class="font-label-lg text-label-lg text-on-surface">High Contrast Mode</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Enhanced black-and-white field lines and solid icon shapes.</span>
+</div>
+<button aria-checked="false" class="min-w-[52px] h-[32px] bg-surface-variant rounded-full relative p-0.5 transition-colors flex-shrink-0" id="contrast-toggle" role="switch" type="button">
+<span class="block w-7 h-7 bg-on-secondary rounded-full shadow-sm transform translate-x-0 transition-transform"></span>
+</button>
+</div>
+<!-- Reduced Motion -->
+<div class="flex items-center justify-between gap-3 p-3 rounded-lg bg-surface-container-low">
+<div class="flex flex-col pr-2">
+<span class="font-label-lg text-label-lg text-on-surface">Reduced Motion</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Disables voice orb breathing pulses and dynamic transitions.</span>
+</div>
+<button aria-checked="false" class="min-w-[52px] h-[32px] bg-surface-variant rounded-full relative p-0.5 transition-colors flex-shrink-0" id="motion-toggle" role="switch" type="button">
+<span class="block w-7 h-7 bg-on-secondary rounded-full shadow-sm transform translate-x-0 transition-transform"></span>
+</button>
+</div>
+</section>
+<!-- SECTION 4: Physical & Assistive Navigation -->
+<section class="flex flex-col bg-surface-container-lowest rounded-xl p-5 shadow-sm gap-5">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[24px]">touch_app</span>
+<h3 class="font-headline-sm text-headline-sm text-primary-container">4. Physical &amp; Assistive Navigation</h3>
+</div>
+<!-- Switch Access & Giant Tap Zones -->
+<div class="flex items-center justify-between gap-3 p-3 rounded-lg bg-surface-container-low">
+<div class="flex flex-col pr-2">
+<span class="font-label-lg text-label-lg text-on-surface">Switch Access &amp; Single-Tap</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Enlarges touch targets to 64px and prevents accidental double-taps.</span>
+</div>
+<button aria-checked="true" class="switch-toggle min-w-[52px] h-[32px] bg-secondary rounded-full relative p-0.5 transition-colors flex-shrink-0" role="switch" type="button">
+<span class="block w-7 h-7 bg-on-secondary rounded-full shadow-sm transform translate-x-5 transition-transform"></span>
+</button>
+</div>
+<!-- Silence Pause Window -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-label-lg text-label-lg text-on-surface">Auto-pause Silence Waiting Period</label>
+<span class="font-label-mono text-label-mono text-secondary" id="pause-display">3.5 seconds</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">How long SARA patiently waits after you pause speaking before processing.</p>
+<div class="flex items-center gap-4 mt-2 px-1">
+<span class="font-label-md text-label-md text-on-surface-variant">1.5s</span>
+<input class="w-full accent-secondary h-2 bg-surface-variant rounded-lg cursor-pointer" id="silence-slider" max="6.0" min="1.5" step="0.5" type="range" value="3.5"/>
+<span class="font-label-md text-label-md text-on-surface-variant">6.0s</span>
+</div>
+</div>
+</section>
+<!-- Reassuring Feedback Notification -->
+<div class="opacity-0 transition-opacity duration-300 pointer-events-none p-3 rounded-lg bg-primary-container text-on-primary flex items-center justify-center gap-2 shadow-lg" id="toast-pill">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span class="font-label-lg text-label-lg">Preferences synchronized to cloud session.</span>
+</div>
+<!-- Bottom Action Group -->
+<div class="flex flex-col gap-3 mt-1">
+<button class="w-full min-h-[52px] rounded-xl bg-primary-container text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-md active:opacity-90" id="btn-apply-settings" type="button">
+<span class="material-symbols-outlined text-[22px]">save</span>
+<span>Apply Settings</span>
+</button>
+<button class="w-full min-h-[44px] rounded-lg bg-surface-container-low text-on-surface-variant font-label-lg text-label-lg flex items-center justify-center gap-2 hover:bg-surface-container active:scale-[0.99] transition-colors" id="btn-reset-default" type="button">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+<span>Reset to Default Accessibility</span>
+</button>
+</div>
+</div>
+<script>
+  (function () {
+    // Interactive Audio Tester Simulator
+    const testBtn = document.getElementById('btn-test-preview');
+    const orbPulse = document.getElementById('orb-pulse');
+    const sampleText = document.getElementById('sample-voice-text');
+    const testIcon = document.getElementById('test-btn-icon');
+    const testLabel = document.getElementById('test-btn-label');
+    let isPlaying = false;
+    let previewTimeout;
+
+    if (testBtn) {
+      testBtn.addEventListener('click', function () {
+        if (isPlaying) {
+          clearTimeout(previewTimeout);
+          stopPreview();
+        } else {
+          isPlaying = true;
+          testIcon.textContent = 'pause';
+          testLabel.textContent = 'Stop Test Voice';
+          orbPulse.classList.add('scale-125', 'bg-secondary/40');
+          sampleText.classList.add('text-secondary');
+          
+          previewTimeout = setTimeout(() => {
+            stopPreview();
+          }, 4500);
+        }
+      });
+    }
+
+    function stopPreview() {
+      isPlaying = false;
+      if (testIcon) testIcon.textContent = 'play_arrow';
+      if (testLabel) testLabel.textContent = 'Hear Sample Voice';
+      if (orbPulse) orbPulse.classList.remove('scale-125', 'bg-secondary/40');
+      if (sampleText) sampleText.classList.remove('text-secondary');
+    }
+
+    // Language Selector Toggles
+    const langBtns = document.querySelectorAll('.lang-opt');
+    langBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        langBtns.forEach((b) => {
+          b.classList.remove('bg-secondary-container', 'text-on-secondary-container', 'shadow-sm');
+          b.classList.add('bg-surface-container', 'text-on-surface');
+          b.setAttribute('aria-checked', 'false');
+        });
+        btn.classList.add('bg-secondary-container', 'text-on-secondary-container', 'shadow-sm');
+        btn.classList.remove('bg-surface-container', 'text-on-surface');
+        btn.setAttribute('aria-checked', 'true');
+      });
+    });
+
+    // Speed Selector Toggles
+    const speedBtns = document.querySelectorAll('.speed-opt');
+    const speedLabel = document.getElementById('speed-label');
+    speedBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        speedBtns.forEach((b) => {
+          b.classList.remove('bg-secondary-container', 'text-on-secondary-container', 'shadow-sm');
+          b.classList.add('bg-surface-container', 'text-on-surface');
+        });
+        btn.classList.add('bg-secondary-container', 'text-on-secondary-container', 'shadow-sm');
+        btn.classList.remove('bg-surface-container', 'text-on-surface');
+        const sVal = btn.getAttribute('data-speed');
+        if (speedLabel) {
+          if (sVal === '0.75') speedLabel.textContent = '0.75x (Relaxed)';
+          else if (sVal === '1.0') speedLabel.textContent = '1.0x (Normal)';
+          else speedLabel.textContent = '1.25x (Brisk)';
+        }
+      });
+    });
+
+    // Voice Tone Toggles
+    const toneBtns = document.querySelectorAll('.tone-opt');
+    toneBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        toneBtns.forEach((b) => {
+          b.classList.remove('bg-secondary-container', 'text-on-secondary-container', 'shadow-sm');
+          b.classList.add('bg-surface-container', 'text-on-surface');
+        });
+        btn.classList.add('bg-secondary-container', 'text-on-secondary-container', 'shadow-sm');
+        btn.classList.remove('bg-surface-container', 'text-on-surface');
+      });
+    });
+
+    // Generic Pill Switch Logic
+    function bindSwitch(selector) {
+      const sw = document.querySelector(selector);
+      if (!sw) return;
+      sw.addEventListener('click', () => {
+        const isChecked = sw.getAttribute('aria-checked') === 'true';
+        const thumb = sw.querySelector('span');
+        if (isChecked) {
+          sw.setAttribute('aria-checked', 'false');
+          sw.classList.remove('bg-secondary');
+          sw.classList.add('bg-surface-variant');
+          thumb.classList.remove('translate-x-5');
+          thumb.classList.add('translate-x-0');
+        } else {
+          sw.setAttribute('aria-checked', 'true');
+          sw.classList.add('bg-secondary');
+          sw.classList.remove('bg-surface-variant');
+          thumb.classList.add('translate-x-5');
+          thumb.classList.remove('translate-x-0');
+        }
+      });
+    }
+
+    bindSwitch('.noise-toggle');
+    bindSwitch('.autoread-toggle');
+    bindSwitch('#contrast-toggle');
+    bindSwitch('#motion-toggle');
+    bindSwitch('.switch-toggle');
+
+    // Text Scale Controls & Preview
+    const scaleBtns = document.querySelectorAll('.scale-opt');
+    const previewBox = document.getElementById('preview-text-box');
+    const scaleBadge = document.getElementById('scale-badge');
+    scaleBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        scaleBtns.forEach((b) => {
+          b.classList.remove('bg-secondary-container', 'text-on-secondary-container', 'shadow-sm');
+          b.classList.add('bg-surface-container', 'text-on-surface');
+        });
+        btn.classList.add('bg-secondary-container', 'text-on-secondary-container', 'shadow-sm');
+        btn.classList.remove('bg-surface-container', 'text-on-surface');
+
+        const scale = btn.getAttribute('data-scale');
+        if (previewBox && scaleBadge) {
+          previewBox.classList.remove('text-body-sm', 'text-body-md', 'text-body-lg', 'text-headline-sm');
+          if (scale === 'sm') {
+            previewBox.classList.add('text-body-sm');
+            scaleBadge.textContent = 'Small (A)';
+          } else if (scale === 'md') {
+            previewBox.classList.add('text-body-md');
+            scaleBadge.textContent = 'Medium (A+)';
+          } else if (scale === 'lg') {
+            previewBox.classList.add('text-body-lg');
+            scaleBadge.textContent = 'Large (A++)';
+          } else {
+            previewBox.classList.add('text-headline-sm');
+            scaleBadge.textContent = 'Extra Large (A+++)';
+          }
+        }
+      });
+    });
+
+    // Silence Slider
+    const silenceSlider = document.getElementById('silence-slider');
+    const pauseDisplay = document.getElementById('pause-display');
+    if (silenceSlider && pauseDisplay) {
+      silenceSlider.addEventListener('input', (e) => {
+        pauseDisplay.textContent = parseFloat(e.target.value).toFixed(1) + ' seconds';
+      });
+    }
+
+    // Apply & Toast feedback
+    const applyBtn = document.getElementById('btn-apply-settings');
+    const toast = document.getElementById('toast-pill');
+    if (applyBtn && toast) {
+      applyBtn.addEventListener('click', () => {
+        toast.classList.remove('opacity-0');
+        toast.classList.add('opacity-100');
+        setTimeout(() => {
+          toast.classList.remove('opacity-100');
+          toast.classList.add('opacity-0');
+        }, 3200);
+      });
+    }
+
+    // Reset Defaults
+    const resetBtn = document.getElementById('btn-reset-default');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        if (silenceSlider) {
+          silenceSlider.value = '3.5';
+          if (pauseDisplay) pauseDisplay.textContent = '3.5 seconds';
+        }
+        if (toast) {
+          toast.querySelector('span:last-child').textContent = 'Reset to standard accessibility profile.';
+          toast.classList.remove('opacity-0');
+          toast.classList.add('opacity-100');
+          setTimeout(() => {
+            toast.classList.remove('opacity-100');
+            toast.classList.add('opacity-0');
+            toast.querySelector('span:last-child').textContent = 'Preferences synchronized to cloud session.';
+          }, 3200);
+        }
+      });
+    }
+  })();
+</script></main></body></html>

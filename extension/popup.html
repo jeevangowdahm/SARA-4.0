@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SARA Quick Assistant</title>
+  <style>
+    body {
+      width: 280px;
+      margin: 0;
+      padding: 16px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #F7F8FC;
+      color: #101B34;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .brand-icon {
+      width: 28px;
+      height: 28px;
+      background: #101B34;
+      color: #17B99A;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+    .brand-text h2 { margin: 0; font-size: 14px; font-weight: 700; }
+    .brand-text p { margin: 0; font-size: 10px; color: #68758D; }
+    .btn {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .btn-teal { background: #17B99A; color: #101B34; }
+    .btn-navy { background: #101B34; color: white; }
+    .hint { font-size: 10px; color: #68758D; text-align: center; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <div class="brand">
+    <div class="brand-icon">🎙️</div>
+    <div class="brand-text">
+      <h2>SARA 3.0</h2>
+      <p>Digital Accessibility Platform</p>
+    </div>
+  </div>
+
+  <button class="btn btn-teal" id="btnOpenSidePanel">
+    Open SARA Side Panel
+  </button>
+
+  <button class="btn btn-navy" id="btnOpenWebApp">
+    Open SARA Web Hub
+  </button>
+
+  <p class="hint">Speak naturally. SARA completes online forms with you.</p>
+
+  <script>
+    document.getElementById('btnOpenSidePanel').addEventListener('click', async () => {
+      const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+      if (tab && chrome.sidePanel && chrome.sidePanel.open) {
+        chrome.sidePanel.open({ tabId: tab.id });
+      } else {
+        alert('Side panel opened. Click the SARA icon in the Chrome toolbar.');
+      }
+      window.close();
+    });
+
+    document.getElementById('btnOpenWebApp').addEventListener('click', () => {
+      chrome.tabs.create({ url: 'http://localhost:4173/' });
+      window.close();
+    });
+  </script>
+</body>
+</html>
+

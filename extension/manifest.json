@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "SARA — Smart Accessible Response Assistant",
+  "version": "3.0.0",
+  "description": "AI-powered digital accessibility platform helping citizens understand and complete online forms naturally using their voice.",
+  "permissions": [
+    "activeTab",
+    "sidePanel",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Open SARA Accessibility Assistant",
+    "default_popup": "popup.html"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+

@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-heading: 'Plus Jakarta Sans', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-color: #f8f9fd;
+    color: #191c1f;
+    font-family: var(--font-body);
+  }
+
+  /* Universal High-Visibility WCAG 2.2 AA Focus Ring */
+  *:focus-visible {
+    outline: 3px solid #17b99a !important;
+    outline-offset: 2px !important;
+  }
+
+  /* Safe Area Insets */
+  .pt-safe {
+    padding-top: max(env(safe-area-inset-top, 0px), 12px);
+  }
+  .pb-safe {
+    padding-bottom: max(env(safe-area-inset-bottom, 0px), 16px);
+  }
+}
+
+/* Accessibility: Text Scaling Modes */
+html.text-size-large {
+  font-size: 115%;
+}
+
+html.text-size-xlarge {
+  font-size: 130%;
+}
+
+/* Accessibility: High Contrast Mode */
+html.high-contrast {
+  --tw-border-opacity: 1;
+}
+html.high-contrast body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+html.high-contrast .bg-surface,
+html.high-contrast .bg-surface-container,
+html.high-contrast .bg-surface-container-low,
+html.high-contrast .bg-surface-container-high {
+  background-color: #ffffff !important;
+  border: 2px solid #000000 !important;
+}
+html.high-contrast .text-on-surface-variant {
+  color: #1a1a1a !important;
+}
+html.high-contrast button {
+  border: 2px solid #000000 !important;
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html.reduced-motion *,
+html.reduced-motion ::before,
+html.reduced-motion ::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+/* Pulsing Voice Orb Animations */
+@keyframes voicePulse {
+  0% {
+    transform: scale(0.96);
+    box-shadow: 0 0 20px 4px rgba(23, 185, 154, 0.25);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 45px 12px rgba(23, 185, 154, 0.45);
+  }
+  100% {
+    transform: scale(0.96);
+    box-shadow: 0 0 20px 4px rgba(23, 185, 154, 0.25);
+  }
+}
+
+.animate-voice-pulse {
+  animation: voicePulse 2.4s ease-in-out infinite;
+}
+
+/* Sound Wave Bars Animation */
+@keyframes waveBar {
+  0%, 100% {
+    height: 6px;
+  }
+  50% {
+    height: 24px;
+  }
+}
+
+.animate-wave-bar-1 {
+  animation: waveBar 1.2s ease-in-out infinite;
+}
+.animate-wave-bar-2 {
+  animation: waveBar 0.9s ease-in-out 0.2s infinite;
+}
+.animate-wave-bar-3 {
+  animation: waveBar 1.4s ease-in-out 0.4s infinite;
+}
+.animate-wave-bar-4 {
+  animation: waveBar 1.0s ease-in-out 0.1s infinite;
+}
+
+/* Floating & Kinetic Motion Animations */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes rippleRing {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.animate-ripple-ring {
+  animation: rippleRing 2.6s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+

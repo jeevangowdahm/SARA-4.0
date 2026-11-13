@@ -1,0 +1,251 @@
+{
+  "totalFrames": 40,
+  "aspectRatio": "16:9",
+  "dimensions": {
+    "width": 1280,
+    "height": 720
+  },
+  "namingPattern": "frame_{index:03d}.png",
+  "frames": [
+    {
+      "index": 1,
+      "filename": "frame_001.png",
+      "path": "/frames/frame_001.png",
+      "size": 811381
+    },
+    {
+      "index": 2,
+      "filename": "frame_002.png",
+      "path": "/frames/frame_002.png",
+      "size": 836879
+    },
+    {
+      "index": 3,
+      "filename": "frame_003.png",
+      "path": "/frames/frame_003.png",
+      "size": 646964
+    },
+    {
+      "index": 4,
+      "filename": "frame_004.png",
+      "path": "/frames/frame_004.png",
+      "size": 427413
+    },
+    {
+      "index": 5,
+      "filename": "frame_005.png",
+      "path": "/frames/frame_005.png",
+      "size": 609868
+    },
+    {
+      "index": 6,
+      "filename": "frame_006.png",
+      "path": "/frames/frame_006.png",
+      "size": 676900
+    },
+    {
+      "index": 7,
+      "filename": "frame_007.png",
+      "path": "/frames/frame_007.png",
+      "size": 849007
+    },
+    {
+      "index": 8,
+      "filename": "frame_008.png",
+      "path": "/frames/frame_008.png",
+      "size": 958367
+    },
+    {
+      "index": 9,
+      "filename": "frame_009.png",
+      "path": "/frames/frame_009.png",
+      "size": 1112583
+    },
+    {
+      "index": 10,
+      "filename": "frame_010.png",
+      "path": "/frames/frame_010.png",
+      "size": 1106398
+    },
+    {
+      "index": 11,
+      "filename": "frame_011.png",
+      "path": "/frames/frame_011.png",
+      "size": 1117214
+    },
+    {
+      "index": 12,
+      "filename": "frame_012.png",
+      "path": "/frames/frame_012.png",
+      "size": 1091229
+    },
+    {
+      "index": 13,
+      "filename": "frame_013.png",
+      "path": "/frames/frame_013.png",
+      "size": 1137810
+    },
+    {
+      "index": 14,
+      "filename": "frame_014.png",
+      "path": "/frames/frame_014.png",
+      "size": 1192932
+    },
+    {
+      "index": 15,
+      "filename": "frame_015.png",
+      "path": "/frames/frame_015.png",
+      "size": 1271339
+    },
+    {
+      "index": 16,
+      "filename": "frame_016.png",
+      "path": "/frames/frame_016.png",
+      "size": 1325694
+    },
+    {
+      "index": 17,
+      "filename": "frame_017.png",
+      "path": "/frames/frame_017.png",
+      "size": 1379052
+    },
+    {
+      "index": 18,
+      "filename": "frame_018.png",
+      "path": "/frames/frame_018.png",
+      "size": 1410085
+    },
+    {
+      "index": 19,
+      "filename": "frame_019.png",
+      "path": "/frames/frame_019.png",
+      "size": 1415593
+    },
+    {
+      "index": 20,
+      "filename": "frame_020.png",
+      "path": "/frames/frame_020.png",
+      "size": 1392561
+    },
+    {
+      "index": 21,
+      "filename": "frame_021.png",
+      "path": "/frames/frame_021.png",
+      "size": 1393069
+    },
+    {
+      "index": 22,
+      "filename": "frame_022.png",
+      "path": "/frames/frame_022.png",
+      "size": 1385928
+    },
+    {
+      "index": 23,
+      "filename": "frame_023.png",
+      "path": "/frames/frame_023.png",
+      "size": 1370056
+    },
+    {
+      "index": 24,
+      "filename": "frame_024.png",
+      "path": "/frames/frame_024.png",
+      "size": 1329691
+    },
+    {
+      "index": 25,
+      "filename": "frame_025.png",
+      "path": "/frames/frame_025.png",
+      "size": 1361600
+    },
+    {
+      "index": 26,
+      "filename": "frame_026.png",
+      "path": "/frames/frame_026.png",
+      "size": 1344916
+    },
+    {
+      "index": 27,
+      "filename": "frame_027.png",
+      "path": "/frames/frame_027.png",
+      "size": 1314081
+    },
+    {
+      "index": 28,
+      "filename": "frame_028.png",
+      "path": "/frames/frame_028.png",
+      "size": 1328273
+    },
+    {
+      "index": 29,
+      "filename": "frame_029.png",
+      "path": "/frames/frame_029.png",
+      "size": 1313974
+    },
+    {
+      "index": 30,
+      "filename": "frame_030.png",
+      "path": "/frames/frame_030.png",
+      "size": 1324721
+    },
+    {
+      "index": 31,
+      "filename": "frame_031.png",
+      "path": "/frames/frame_031.png",
+      "size": 1314509
+    },
+    {
+      "index": 32,
+      "filename": "frame_032.png",
+      "path": "/frames/frame_032.png",
+      "size": 1324670
+    },
+    {
+      "index": 33,
+      "filename": "frame_033.png",
+      "path": "/frames/frame_033.png",
+      "size": 1312548
+    },
+    {
+      "index": 34,
+      "filename": "frame_034.png",
+      "path": "/frames/frame_034.png",
+      "size": 1322962
+    },
+    {
+      "index": 35,
+      "filename": "frame_035.png",
+      "path": "/frames/frame_035.png",
+      "size": 1298453
+    },
+    {
+      "index": 36,
+      "filename": "frame_036.png",
+      "path": "/frames/frame_036.png",
+      "size": 1290253
+    },
+    {
+      "index": 37,
+      "filename": "frame_037.png",
+      "path": "/frames/frame_037.png",
+      "size": 1261866
+    },
+    {
+      "index": 38,
+      "filename": "frame_038.png",
+      "path": "/frames/frame_038.png",
+      "size": 1247400
+    },
+    {
+      "index": 39,
+      "filename": "frame_039.png",
+      "path": "/frames/frame_039.png",
+      "size": 1221415
+    },
+    {
+      "index": 40,
+      "filename": "frame_040.png",
+      "path": "/frames/frame_040.png",
+      "size": 1211232
+    }
+  ]
+}

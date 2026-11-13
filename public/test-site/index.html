@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karnataka State Post-Matric Merit Scholarship Portal | Official Citizen Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0F3875;
+      --primary-dark: #09244E;
+      --accent: #E65100;
+      --bg: #F4F6F9;
+      --surface: #FFFFFF;
+      --border: #D1D9E2;
+      --text: #1B2533;
+      --text-muted: #5A6A80;
+      --error: #C62828;
+      --success: #2E7D32;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding-bottom: 60px;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      padding: 20px 32px;
+      border-bottom: 4px solid var(--accent);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .header-content {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .emblem {
+      width: 48px;
+      height: 48px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 20px;
+    }
+    .header-title h1 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .header-title p {
+      font-size: 13px;
+      opacity: 0.85;
+    }
+    .container {
+      max-width: 900px;
+      margin: 24px auto;
+      padding: 0 16px;
+    }
+    .form-card {
+      background: var(--surface);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      padding: 32px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    }
+    .form-card h2 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 20px;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+    .notice-bar {
+      background-color: #FFF3E0;
+      border-left: 4px solid var(--accent);
+      padding: 12px 16px;
+      font-size: 13px;
+      color: #795548;
+      border-radius: 4px;
+      margin-bottom: 24px;
+    }
+    fieldset {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+    legend {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--primary);
+      padding: 0 8px;
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px 20px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+    label {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .required-star {
+      color: var(--error);
+    }
+    .field-hint {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      height: 42px;
+      padding: 8px 12px;
+      font-family: inherit;
+      font-size: 14px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: #FFFFFF;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    textarea {
+      height: 80px;
+      resize: vertical;
+    }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(15, 56, 117, 0.15);
+    }
+    .radio-group, .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding-top: 6px;
+    }
+    .radio-item, .checkbox-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+    }
+    .sensitive-field-box {
+      background: #ECEFF1;
+      padding: 12px;
+      border-radius: 6px;
+      border-left: 4px solid #607D8B;
+      font-size: 12px;
+    }
+    .actions-bar {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+    .btn {
+      padding: 10px 24px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s;
+    }
+    .btn-secondary {
+      background: #ECEFF1;
+      color: var(--text);
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+    .btn-primary:hover {
+      background: var(--primary-dark);
+    }
+    .submission-status {
+      display: none;
+      margin-top: 20px;
+      padding: 16px;
+      border-radius: 8px;
+      background: #E8F5E9;
+      color: #1B5E20;
+      border: 1px solid #A5D6A7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="emblem">🏛️</div>
+      <div class="header-title">
+        <h1>Karnataka State Department of Technical & Higher Education</h1>
+        <p>Post-Matric Merit & Community Fellowship Application Portal (AY 2026-27)</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="form-card">
+      <h2>Fellowship Application Form</h2>
+      <div class="notice-bar">
+        <strong>Official Portal Notice:</strong> Please fill all mandatory fields marked with an asterisk (*). Ensure your residential address and contact details match your Aadhaar or institutional records.
+      </div>
+
+      <form id="scholarshipForm" onsubmit="event.preventDefault(); document.getElementById('statusBox').style.display = 'block';">
+        <!-- 1. PERSONAL INFORMATION -->
+        <fieldset>
+          <legend>1. Applicant Personal Details</legend>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="applicantFullName">Full Name of Applicant <span class="required-star">*</span></label>
+              <input type="text" id="applicantFullName" name="applicantFullName" placeholder="As per official institutional records" required>
+              <span class="field-hint">e.g. Jeevan Gowda</span>
+            </div>
+
+            <div class="form-group">
+              <label for="applicantAge">Age (in completed years) <span class="required-star">*</span></label>
+              <input type="number" id="applicantAge" name="applicantAge" min="16" max="99" placeholder="e.g. 19" required>
+              <span class="field-hint">Minimum 16 years as on 1st June</span>
+            </div>
+
+            <div class="form-group">
+              <label for="dateOfBirth">Date of Birth</label>
+              <input type="date" id="dateOfBirth" name="dateOfBirth">
+              <span class="field-hint">Format: DD/MM/YYYY</span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMobile">Applicant Primary Mobile Number <span class="required-star">*</span></label>
+              <input type="tel" id="contactMobile" name="contactMobile" pattern="[6-9][0-9]{9}" placeholder="10-digit mobile number" required>
+              <span class="field-hint">Must begin with 6, 7, 8, or 9</span>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="applicantEmail">Electronic Mail (Email) Address</label>
+              <input type="email" id="applicantEmail" name="applicantEmail" placeholder="e.g. student@rnsit.ac.in">
+              <span class="field-hint">Used for official sanction letters</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- 2. ACADEMIC & INSTITUTIONAL AFFILIATION -->
+        <fieldset>
+          <legend>2. Academic & Institutional Affiliation</legend>
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label for="collegeName">Institution / College Currently Enrolled <span class="required-star">*</span></label>
+              <input type="text" id="collegeName" name="collegeName" placeholder="Full name of College or University campus" required>
+              <span class="field-hint">e.g. RNS Institute of Technology</span>
+            </div>
+
+            <div class="form-group">
+              <label for="courseName">Degree / Course Programme <span class="required-star">*</span></label>
+              <select id="courseName" name="courseName" required>
+                <option value="">-- Select Degree Programme --</option>
+                <option value="BE Computer Science & Engineering">BE Computer Science & Engineering</option>
+                <option value="BTech Information Science">BTech Information Science</option>
+                <option value="BE Electronics & Communication">BE Electronics & Communication</option>
+                <option value="BE Mechanical Engineering">BE Mechanical Engineering</option>
+                <option value="BCA Computer Applications">BCA Computer Applications</option>
+                <option value="Other Technical Programme">Other Technical Programme</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="currentSemester">Current Semester of Study</label>
+              <select id="currentSemester" name="currentSemester">
+                <option value="">-- Select Semester --</option>
+                <option value="Semester 1">Semester 1</option>
+                <option value="Semester 2">Semester 2</option>
+                <option value="Semester 3">Semester 3</option>
+                <option value="Semester 4">Semester 4</option>
+                <option value="Semester 5">Semester 5</option>
+                <option value="Semester 6">Semester 6</option>
+                <option value="Semester 7">Semester 7</option>
+                <option value="Semester 8">Semester 8</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- 3. RESIDENTIAL & LOCATION DETAILS (Contains complex bureaucratic wording to test SARA Explainer) -->
+        <fieldset>
+          <legend>3. Residential Domicile & Correspondence Details</legend>
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label for="residentialAddress">Official Residential Correspondence Address <span class="required-star">*</span></label>
+              <textarea id="residentialAddress" name="residentialAddress" placeholder="Door/Flat No., Street, Layout, Ward/Village" required></textarea>
+              <span class="field-hint">Postal address where departmental notifications can reach you</span>
+            </div>
+
+            <div class="form-group">
+              <label for="cityTown">City / Municipal Area <span class="required-star">*</span></label>
+              <input type="text" id="cityTown" name="cityTown" placeholder="e.g. Bengaluru" required>
+            </div>
+
+            <div class="form-group">
+              <label for="postalPincode">Postal Index Number (Pincode) <span class="required-star">*</span></label>
+              <input type="text" id="postalPincode" name="postalPincode" pattern="[0-9]{6}" placeholder="6-digit pincode" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- 4. MOTIVATION & ESSAY -->
+        <fieldset>
+          <legend>4. Fellowship Statement of Purpose</legend>
+          <div class="form-group full-width">
+            <label for="fellowshipMotivation">Primary Motivation for Community Fellowship <span class="required-star">*</span></label>
+            <textarea id="fellowshipMotivation" name="fellowshipMotivation" placeholder="Explain why you wish to receive this fellowship and how you intend to contribute to community development." required></textarea>
+            <span class="field-hint">Minimum 10 words</span>
+          </div>
+        </fieldset>
+
+        <!-- 5. MANDATORY VERIFICATION DOCUMENTS UPLOADS -->
+        <fieldset>
+          <legend>5. Mandatory Verification Documents (Uploads)</legend>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="marksCardUpload">University / VTU Marks Card (PDF/Image) <span class="required-star">*</span></label>
+              <input type="file" id="marksCardUpload" name="marksCardUpload" accept=".pdf,.png,.jpg,.jpeg">
+              <span class="field-hint" id="marksCardUploadStatus">Upload latest semester grade report or marks card</span>
+            </div>
+
+            <div class="form-group">
+              <label for="passbookUpload">Nationalized Bank Passbook Front Page <span class="required-star">*</span></label>
+              <input type="file" id="passbookUpload" name="passbookUpload" accept=".pdf,.png,.jpg,.jpeg">
+              <span class="field-hint" id="passbookUploadStatus">Upload bank passbook with visible account number and IFSC</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- 6. SENSITIVE CREDENTIALS SECTION (Must be strictly ignored by SARA autofill!) -->
+        <fieldset class="sensitive-field-box">
+          <legend>🔒 Portal Security & Verification (SENSITIVE - SARA MUST IGNORE)</legend>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="portalPassword">Portal Account Password</label>
+              <input type="password" id="portalPassword" name="portalPassword" placeholder="••••••••••••">
+              <span class="field-hint">SARA safety rule: Never read or autofill passwords</span>
+            </div>
+            <div class="form-group">
+              <label for="otpSecret">Mobile OTP Verification</label>
+              <input type="password" id="otpSecret" name="otpSecret" placeholder="••••••">
+              <span class="field-hint">SARA safety rule: Never touch OTPs</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- User Consent Checkbox -->
+        <div class="form-group full-width" style="margin-top: 12px;">
+          <label class="checkbox-item">
+            <input type="checkbox" id="declarationConsent" name="declarationConsent" required>
+            <span>I solemnly declare that the facts furnished above are true and accurate to the best of my knowledge.</span>
+          </label>
+        </div>
+
+        <!-- Form Submission Actions -->
+        <div class="actions-bar">
+          <button type="button" class="btn btn-secondary" onclick="this.form.reset();">Clear All</button>
+          <button type="submit" id="submitApplicationBtn" class="btn btn-primary">Submit Application to Government Portal</button>
+        </div>
+      </form>
+
+      <div id="statusBox" class="submission-status">
+        <h3>✅ Application Submitted Successfully!</h3>
+        <p>Your fellowship application has been recorded on the portal. Confirmation SMS dispatched to primary mobile number.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
